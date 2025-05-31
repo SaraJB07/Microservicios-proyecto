@@ -1,0 +1,188 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  padding: 2rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.barra-navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto 2rem auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/* 📋 Formularios */
+form {
+  background: #e5bfe291;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+   width: 100%;
+  margin: 0 auto 2rem auto;
+  transition: transform 0.3s ease;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+form:hover {
+  transform: scale(1.01);
+}
+
+form h2 {
+  margin-bottom: 1.5rem;
+  color: #1e90ff;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    margin-top: -2rem;
+    background-color: #e5bfe291;
+    border-radius: 2rem;
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ccc;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #1e78ff;
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.3);
+  outline: none;
+}
+
+.botones-navegacion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-top: -0.5rem;
+  
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #7e4098;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(185, 59, 204, 0.955);
+  min-width: 260px;
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #3c084a;
+  transform: translateY(-2px);
+}
+
+.titulo-principal, h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4e1f5a;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+/* 🔘 Botón */
+button, input[type="submit"] {
+  background-color: #7e4098;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1.5rem;
+  border: none;
+   box-shadow: 0 4px 12px rgba(185, 59, 204, 0.955);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #3c084a;
+  transform: scale(1.05);
+}
+
+/* 📊 Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 3rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #9859b3ac;
+  color: white;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+tr:hover {
+  background-color: #f0f8ff;
+  transition: background 0.3s;
+}
+
+/* 🧙 Animaciones extra */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+form, table {
+  animation: fadeIn 0.8s ease;
+}

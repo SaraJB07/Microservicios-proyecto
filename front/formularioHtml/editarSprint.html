@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Sprint</title>
+    <!--<link rel="stylesheet" href="../css/formularios.css">-->
+</head>
+<body>
+    <h2>Editar Sprint</h2>
+    <form id="editarSprintForm">
+        <div>
+            <label>Nombre:</label>
+            <input type="text" name="nombreInput" id="nombreInput">
+        </div>
+        <div>
+            <label>Fecha de Inicio:</label>
+            <input type="datetime-local" name="fechaInicioInput" id="fechaInicioInput" value="">
+        </div>
+        <div>
+            <label>Fecha de fin:</label>
+            <input type="datetime-local" name="fechaFinInput" id="fechaFinInput" value="">
+        </div>
+        <div>
+            <button type="submit">Guardar Cambios</button>
+            <button type="button" id="cancelarBtn">Cancelar</button>
+        </div>
+    </form>
+    <script src="../jss/editarSprint.js"></script>
+</body>
+</html>

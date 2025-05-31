@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "3dfc14a4-d399-43e3-a170-f01d92f3ac87",
+		"name": "Taller_micro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "44584272",
+		"_collection_link": "https://darwin-5648437.postman.co/workspace/Darwin's-Workspace~29e971d0-ccb0-4cdc-83ca-c8bb0266530d/collection/44584272-3dfc14a4-d399-43e3-a170-f01d92f3ac87?action=share&source=collection_link&creator=44584272"
+	},
+	"item": [
+		{
+			"name": "delete_sprint",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/sprints"
+			},
+			"response": []
+		},
+		{
+			"name": "index_sprint",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sprint 1\",\r\n    \"fecha_inicio\": \"2025-05-01\",\r\n    \"fecha_fin\": \"2025-05-15\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/sprints"
+			},
+			"response": []
+		},
+		{
+			"name": "store_sprint",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Sprint 1\",\r\n    \"fecha_inicio\": \"2025-05-01\",\r\n    \"fecha_fin\": \"2025-05-15\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/sprint"
+			},
+			"response": []
+		},
+		{
+			"name": "show_sprint",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "}\r\n        \"nombre\": \"Sprint 1\",\r\n        \"fecha_inicio\": \"2025-05-01\",\r\n        \"fecha_fin\": \"2025-05-15\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/sprint/5"
+			},
+			"response": []
+		},
+		{
+			"name": "update_sprint",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sprint 77\",\r\n    \"fecha_inicio\": \"2025-04-01\",\r\n    \"fecha_fin\": \"2025-05-15\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/sprint/5"
+			},
+			"response": []
+		},
+		{
+			"name": "index_retro",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sprint 1\",\r\n    \"fecha_inicio\": \"2025-05-01\",\r\n    \"fecha_fin\": \"2025-05-15\"\r\n}"
+				},
+				"url": "http://localhost:8000/api/retro_items"
+			},
+			"response": []
+		},
+		{
+			"name": "store_retro",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sprint 1\",\r\n    \"fecha_inicio\": \"2025-05-01\",\r\n    \"fecha_fin\": \"2025-05-15\"\r\n}"
+				},
+				"url": "http://localhost:8000/api/retro_item"
+			},
+			"response": []
+		},
+		{
+			"name": "show_retro",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sprint 1\",\r\n    \"fecha_inicio\": \"2025-05-01\",\r\n    \"fecha_fin\": \"2025-05-15\"\r\n}"
+				},
+				"url": "http://localhost:8000/api/retro_item"
+			},
+			"response": []
+		},
+		{
+			"name": "update_retro",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8000/api/retro_item/"
+			},
+			"response": []
+		},
+		{
+			"name": "delete_retro",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sprint 1\",\r\n    \"fecha_inicio\": \"2025-05-01\",\r\n    \"fecha_fin\": \"2025-05-15\"\r\n}"
+				},
+				"url": "http://localhost:8000/api/retro_item/1"
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../css/formularios.css">
+</head>
+<body>
+    
+    
+    <h1>Retrospectivas anteriores</h1>
+    <div>
+        <label for="sprintFilter">Filtrar por Sprint:</label>
+        <select id="sprintFilter">
+            <option value="">Todos los Sprints</option>
+        </select>
+        <button id="filtrarBtn">Filtrar</button>
+        <button id="limpiarBtn">Limpiar</button>
+    </div>
+
+    <br>
+        <button id="volverBtn">Volver a la página principal</button>
+    <table id="retroTable">
+        <thead>
+            <tr>
+                <th>Sprint</th>
+                <th>Categoría</th>
+                <th>Descripción</th>
+                <th>Cumplida</th>
+                <th>Fecha revisión</th>
+                <th>Creado</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    
+    <script src="../jss/app_retro.js"></script>
+    
+</body>
+</html>

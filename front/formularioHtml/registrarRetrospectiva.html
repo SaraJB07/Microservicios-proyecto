@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Retro Item</title>
+    <link rel="stylesheet" href="../css/formularios.css">
+</head>
+<body>
+  
+    <form name="retroItemForm">
+        <h1>Registrar Retrospectivas</h1>
+        <div>
+            <label>Sprint:</label>
+            <select name="sprint_id" id="sprintSelect" required>
+                <option value="">Seleccione un sprint</option>
+            </select>
+        </div>
+        <div>
+            <label>Categoría:</label>
+            <select name="categoria" required>
+                <option value="accion">Acción</option>
+                <option value="logro">Logro</option>
+                <option value="impedimento">Impedimento</option>
+                <option value="comentario">Comentario</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+        <div>
+            <label>Descripción:</label>
+            <textarea name="descripcion" required></textarea>
+        </div>
+        <div>
+            <label>Cumplida:</label>
+            <input type="checkbox" name="cumplida">
+        </div>
+        <div>
+            <label>Fecha de revisión:</label>
+            <input type="date" name="fecha_revision">
+        </div>
+        <button type="submit">Guardar</button>
+        <button type="reset" id="cancelarBtn">Cancelar</button>
+    </form>
+    <br>
+     <h1>Retrospectivas</h1>
+      <div id="retroList" style="margin-bottom:2em;"></div>
+    <script src="../jss/registrarRetroItem.js"></script>  
+   
+
+</body>
+</html>
